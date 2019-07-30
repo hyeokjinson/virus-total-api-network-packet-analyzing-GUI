@@ -1,0 +1,31 @@
+logger:
+    version: 1
+
+    formatters:
+        simpleFormater:
+            format: 
+            datefmt: 
+
+    handlers:
+        console:
+            class: logging.StreamHandler
+            formatter: simpleFormater
+            level: DEBUG
+            stream: ext://sys.stdout
+        file:
+            class : logging.handlers.RotatingFileHandler
+            formatter: simpleFormater
+            level: DEBUG
+            filename: C:\Users\son\Desktop\project1\test1\test1\log.txt
+            maxBytes: 10485760
+            backupCount: 10
+
+    root:
+        level: DEBUG
+        handlers: [console, file]
+
+service:
+    # lip: target local ip
+    # lport: target local port
+    # rip: target remote ip
+    # rport: target remort port

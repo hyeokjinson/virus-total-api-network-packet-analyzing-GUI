@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="그림">
+    <file>심장.png</file>
+  </qresource>
+</RCC>
