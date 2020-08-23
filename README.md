@@ -100,7 +100,7 @@ This is a python script for importing data to MySql database using .csv, .xls, o
 
 3.1.1 전체적인 시스템 흐름도
 
-![image01](C:\Users\son\Desktop\image/image01.png)
+![image01](./C:\Users\son\Desktop\image/image01.png)
 
 				<전체 시스템 흐름도>
 
