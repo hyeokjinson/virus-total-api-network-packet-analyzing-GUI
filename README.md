@@ -120,7 +120,7 @@ This is a python script for importing data to MySql database using .csv, .xls, o
 
 3.2	상위 설계
 3.2.1 내부 시스템별 모듈 설계
-
+![image02](https://user-images.githubusercontent.com/13067686/90976165-c529b280-e575-11ea-9f1d-7722173b95d0.png)
 -실시간 목적지 IP주소 VIEW
 ●Dump버튼 클릭
 -덤프버튼 클릭시  목적지 경로 ip를 가져온다->Destination ip view창에 출력
@@ -141,14 +141,18 @@ View Button 클릭시 유해한 ip인지 확인 한 결과값이 저장된 resul
 
 3.2.2전체적인 UI 설계
 
+![image03](https://user-images.githubusercontent.com/13067686/90976167-c65adf80-e575-11ea-9862-c10f532a9d29.png)
+
 	                   <로그인 창 기본틀 GUI>
 
-
+![image04](https://user-images.githubusercontent.com/13067686/90976169-c824a300-e575-11ea-83c8-f9d6c0ad0fcb.png)
 
 	                   <로그인 후 실행시 GUI 화면>
 	         
 3.2.3로그 기록 저장 파일 
 -log.txt 저장 내용: 목적지 IP
+
+![image05](https://user-images.githubusercontent.com/13067686/90976171-ca86fd00-e575-11ea-894e-da719441f17f.png)
 			<log.txt 저장 내용>
 
 
@@ -167,7 +171,7 @@ View Button 클릭시 유해한 ip인지 확인 한 결과값이 저장된 resul
 
 3.3	상세 설계
 3.3.1클래스 다이어그램
-
+![image07](https://user-images.githubusercontent.com/13067686/90976175-ce1a8400-e575-11ea-8792-d846bdcec358.png)
 
 -관리자 계정 로그인 GUI
 구현언어:python3.7,pyqt5
@@ -205,7 +209,11 @@ virus total api:log.txt에 저장된 IP주소 값을 읽어서 바이러스 토�
 1.네트워크 트래픽 그래프 보기 버튼을 클릭
 2.클릭 시 실시간 네트워크 트래픽 그래프와 초당 속도를 기준으로한 그래프를 띄워준다.
 ●VirusTotal Result view
-	<log.txt값 보내기>		<VTAPI결과값 result.csv 파일 읽기>
+![image09](https://user-images.githubusercontent.com/13067686/90976189-d7a3ec00-e575-11ea-8317-6b6c13ba1874.png)
+	<log.txt값 보내기>		
+	
+![image12](https://user-images.githubusercontent.com/13067686/90976181-d5419200-e575-11ea-8db6-71e960486607.png)	
+	<VTAPI결과값 result.csv 파일 읽기>
 
 1.덤프파일을 눌러 실시간으로 실행되어 목적지 IP가 저장되는 log.txt 파일을 가져와서 결과 보내기 버튼 클릭 시 바이러스 토탈 API를 통해 IP 값들을 보내준다.(15초에 IP 1개)
 2. 나온 결과값들을 result.csv파일에 저장해 준다.
@@ -220,17 +228,17 @@ virus total api:log.txt에 저장된 IP주소 값을 읽어서 바이러스 토�
 - Windows 10
 4.3 구현결과
 - Login 화면
-
+![image13](https://user-images.githubusercontent.com/13067686/90976182-d5419200-e575-11ea-8690-25259fe37aaa.png)
 - 메인 화면
 
-
+![image14](https://user-images.githubusercontent.com/13067686/90976183-d5da2880-e575-11ea-9a6f-22af48bb380a.png)
 
 
 
 
 
 -그래프 화면
-
+![image15](https://user-images.githubusercontent.com/13067686/90976184-d5da2880-e575-11ea-991b-b86eeea903d1.png)
 
 
 그래프 버튼 클릭 시 네트워크 트래픽 초당 다운로드 속도를 보여주는 그래프를 보여준다
@@ -240,16 +248,18 @@ virus total api:log.txt에 저장된 IP주소 값을 읽어서 바이러스 토�
 
 - Dump버튼을 클릭시 네트워크 패킷 덤프한 내용(목적지 IP주소를log.txt에 저장)된 내용을 출력
 
-
+![image16](https://user-images.githubusercontent.com/13067686/90976185-d672bf00-e575-11ea-9260-2a634c9ff867.png)
 
 
 
 
 2. Graph버튼 실행
+![image17](https://user-images.githubusercontent.com/13067686/90976186-d672bf00-e575-11ea-9f25-dcf321e91ccd.png)
 
 - Graph Button 클릭시 네트워크 트래픽 그래프 띄워주기
 
 3. Result버튼 실행
+![image18](https://user-images.githubusercontent.com/13067686/90976187-d70b5580-e575-11ea-9bee-4011d7e395dd.png)
 
 - Result버튼 클릭 시 바이러스 토탈과 연동하여 Destination IP 가 저장된 log.txt를 읽어서 보내고 결과값을 result.csv에 저장
 
@@ -258,6 +268,7 @@ virus total api:log.txt에 저장된 IP주소 값을 읽어서 바이러스 토�
 
 4.VIRUS TOTAL 결과값 출력
 
+![image19](https://user-images.githubusercontent.com/13067686/90976188-d70b5580-e575-11ea-9c2f-bbb02b40f518.png)
 
 - View Button 클릭시 유해한 ip인지 확인 한 결과값이 저장된 result.csv를 읽어들여 result view 창에 출력
 
